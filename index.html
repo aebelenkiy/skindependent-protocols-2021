@@ -1,0 +1,970 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+
+<style type="text/css">
+
+  body{font-family: Oswald;}
+
+/*  .important{
+    font-weight:bold;
+  }*/
+  .informative{
+    font-family: Oswald;
+  }
+  ol {
+    counter-reset: item;
+    list-style-position: outside;
+    /*list-style-type: none;*/
+  }
+  li {
+      list-style-type: counters(item, ".") " )";
+  }
+  
+  li:before {
+    content: counters(item, ".") " )";
+    counter-increment: item 
+    }
+  
+.logo {letter-spacing: -2px
+; font-size: 30px}
+.logo_skin{font-style: italic;
+  color: #d1d1d1;
+font-weight: 100}
+.logo_sus{font-weight: 900;}
+
+h1{font-size: 30}
+
+h2{font-size: 25}
+
+h3{font-size: 20
+font-weight: bold;}
+
+h4{font-size: 15}
+
+</style>
+
+  <body>
+    <nav>
+      <header>        
+        <div class="logo">
+          <span class="logo_skin">SKINDEPENDENT</span><span class="logo_sus">SUSPENSION</span>
+        </div>
+        2021 PROCEDURE PROTOCOL V 1.2
+      </header>
+      <ol>
+        <li>
+          <a class="nav-link" href="#PART_1_RIGGING">PART 1: RIGGING</a>
+            <ol>
+              <li><a class="nav-link" href="#Factors_of_Safety">Factors of Safety</a></li>
+              <li><a class="nav-link" href="#Rigger_Roles_&_Responsibilities">Rigger Roles & Responsibilities</a></li>
+              <li><a class="nav-link" href="#Setting_up_the_load_path">Setting up the load path</a></li>
+              <li><a class="nav-link" href="#Cord_Use">Cord Use</a></li>
+              <li><a class="nav-link" href="#Terminations">Terminations</a></li>
+              <li><a class="nav-link" href="#Hardware_selection_&_use">Hardware selection & use</a></li>
+              <li><a class="nav-link" href="#Belay">Belay</a></li>
+              <li><a class="nav-link" href="#Mainline">Mainline</a></li>
+              <li><a class="nav-link" href="#Inspection_&_Maintenance">Inspection & Maintenance</a></li>
+              <li><a class="nav-link" href="#General_Rigging_Guidelines">General Rigging Guidelines</a></li>
+            </ol>
+        </li>
+        <li>
+          <a class="nav-link" href="#PART_2_INFECTION_CONTROL">PART 2: INFECTION CONTROL</a>
+          <ol>
+            <li><a class="nav-link" href="#Roles_&_Responsibilities">Roles & Responsibilities</a></li>
+            <li><a class="nav-link" href="#Hand_Washing">Hand Washing</a></li>
+            <li><a class="nav-link" href="#Personal_Protective_Equipment">Personal Protective Equipment</a></li>
+            <li><a class="nav-link" href="#Set_Up">Set Up</a></li>
+            <li><a class="nav-link" href="#Skin_Preparation">Skin Preparation</a></li>
+            <li><a class="nav-link" href="#Piercing">Piercing</a></li>
+            <li><a class="nav-link" href="#Break_Down">Break Down</a></li>
+            <li><a class="nav-link" href="#Bio_Assistant">Bio Assistant</a></li>
+            <li><a class="nav-link" href="#Rigging_with_Cord">Rigging with Cord</a></li>
+            <li><a class="nav-link" href="#Processing_Hardware">Processing Hardware</a></li>
+            <li><a class="nav-link" href="#Donning_PPE">Donning PPE</a></li>
+            <li><a class="nav-link" href="#Post_Suspension">Post Suspension</a></li>
+            <li><a class="nav-link" href="#Hook_Processing">Hook Processing</a></li>
+            <li><a class="nav-link" href="#Blood_Cleanup">Blood Cleanup</a></li>
+            <li><a class="nav-link" href="#Suturing_Protocol">Suturing Protocol</a></li>
+            <li><a class="nav-link" href="#Blood_OPIM_Exposure">Blood/OPIM Exposure</a></li>
+            <li><a class="nav-link" href="#Handling_of_Contaminated_Waste">Handling of Contaminated Waste</a></li>
+            <li><a class="nav-link" href="#General_Guidelines_for_Infection_Control">General Guidelines for Infection Control</a></li>
+          </ol>
+        </li>  
+        <li>
+          <a class="nav-link" href="#PART_3_ADDITIONAL_INFORMATION">PART 3: ADDITIONAL INFORMATION</a>
+          <ol>
+            <li><a class="nav-link" href="#Links_&_Information">Links & Information</a></li>
+          </ol>
+        </li>
+      </ol>
+    </nav>
+    <section id="PART_1_RIGGING">
+      <h2>PART 1: RIGGING</h2>
+      <ol>
+          <li id="Factors_of_Safety">
+            <strong>Factors of Safety</strong>
+            <ol>
+              <li>
+                The factor of safety is the ratio between the designated working load limit (WLL) or safe working load (SWL) and the load the equipment is expected to fail at. Given the nature of body suspension, it is considered a “high risk situation”. As we are flying people overhead, we (skindependent) employ a safety factor of 12:1. Below are examples and different terminologies.
+              </li>
+              <li>
+                <strong>Design Factor</strong>
+                The Design Factor (DF) is specified by a designer or manufacturer and this defines the factor applied to the MBS to determine maximum load acceptable for a component.
+              </li>
+              <li>
+                <strong>Safety Factor</strong>
+                Safety Factor (SF) or Factor of Safety (FoS) is generally defined by industry rather than manufacturer.  It may be significantly different to DF.  For example, a particular connector may have a minimum break strength (MBS) of 50kN, a manufacturer specified DF of 4, but an industry specified SF of 10 when used for a particular application.
+              </li>
+              <li>
+                <strong>WLL</strong>
+                Working Load Limit (WLL) is a term used by manufacturers to indicate the maximum force that should be applied to an item in normal use, regardless of industry.  The ratio of MBS to WLL is referred to as the Design Factor (DF).  Many manufacturers specify a DF of 4, which implies a WLL of a quarter of the MBS.  Manufacturers state the WLL to ensure that the item is not subjected to significant fatigue and remains in the range of normal elastic deformation.
+              </li>
+              <li>
+                <strong>SWL</strong>
+                Safe Working Load (SWL) is typically determined by dividing the MBS of an item by the Safety Factor (SF) required for a particular use.  As stated above, it’s possible that an entertainment rigger may calculate a different SWL for a particular use of an item than the value determined by a rescue technician.
+              </li>
+              <li>
+                <strong>Example:</strong>
+                A particular steel carabiner has a MBS of 50kN.  The manufacturer has specified a DF of 4 for this connector, regardless of use. This carabiner has a WLL of 12.5kN and this value should never be exceeded in normal use – regardless of industry or application.  If this value is exceeded, it should not fail below the MBS however it should then be removed from service and destroyed. An entertainment rigger working in a certain country is required by the industry code-of-practice to use a SF of 10 for flying performers, and thus determines the SWL of this carabiner is 50kN/10 = 5kN. <br>
+                A rescue technician in another country is supposed to apply a SF of 5 to hardware, and thus determines a SWL of 50kn/5 = 10kN for an identical connector.
+              </li>
+            </ol>
+          </li>
+         <li id="Rigger_Roles_&_Responsibilities">Rigger Roles & Responsibilities:
+          <ol>
+              
+                <li><p>
+                 Head Rigger - This person is responsible for the overall rigging of the suspension event - all rigging to be checked off by a head rigger prior to any suspension commencing. Any and all matters pertaining to rigging can be brought to the head rigger.
+               </p></li>
+              
+              <p>
+                <li>
+                 Top Rigger - This person is responsible for the rigging of the hard point of the suspension and attaching any and all equipment of the load path from the ceiling to the bottom block.
+               </li>
+              </p>
+              <p>
+                <li>
+                 Ground Rigger - This person is responsible for spotting the top rigger on the ladder and must remain at the bottom of the ladder as a support until the top rigger has concluded their work and is safely back on the ground. They are also responsible for identifying any hazards that may be present under and around the area to be rigged.
+               </li>
+              </p>
+              <p>
+                <li>
+                 General Rigger - A crew member responsible for the general checking and oversight of any rigging in place, being vigilant to ensure the safety of everyone involved with the suspension(s) being facilitated.
+               </li>
+              </p>
+              <p>
+                It is the responsibility of all riggers to each have a safety knife and butane torch on their person in case of emergency. An LED torch should also be made available for any checking of overhead rigging and/or hook shifting.
+               </li>
+              </p>
+            </ol>
+          </li>
+         <li id="Setting_up_the_load_path">Setting up the load path:
+          <ol>
+              <p>
+                <li>
+                  Read through the WORKSAFE LADDER SAFETY document prior to setting the ladder up.
+               </li>
+              </p>
+              <p>
+                <li>
+                 Once the ladder is carefully placed against the ceiling beam, top rigger to climb with ground rigger supporting the bottom rung.
+               </li>
+              </p>
+              <p>
+                <li>
+                 Top rigger to have protective mat for beam and black sling.
+               </li>
+              </p>
+              <p>
+                <li>
+                  Once at the ceiling hardpoint, check the beam for any abnormalities - specifically sharp burrs or anything that could compromise the hardware.
+               </li>
+              </p>
+              <p>
+                <li>
+                  Lay the mat over the beam, covering the edges and tape in place if needed.
+               </li>
+              </p>
+              <p>
+                <li>
+                  Choke the round sling on top of the mat and ensure it is secure.
+               </li>
+              </p>
+              <p>
+                <li>
+                  Return to the floor to collect remaining hardware (delta rapide and reeved pulley system).
+               </li>
+              </p>
+              <p>
+                <li>
+                  Attach the delta to the sling then attach the pulley system to the delta. Ensure there is no tension on the delta when threading the gate closed (remember to thread down).
+               </li>
+              </p>
+              <p>
+                <li>
+                  Once all is attached, have the head rigger double check all the attachment points in the load path.
+               </li>
+              </p>
+              <p>
+                <li>
+                 It is the responsibility of the head rigger to attach a GREEN tag to the hard point where the load path begins, once all connections have been checked. This includes but is not limited to:
+              </p>
+                 <ol>
+                   <p>
+                    <li>Protective mat covering the beam - make sure is not moving around and is covering all edges</li>
+                    <li>Sling/Spanset - check it is evenly wrapped and not bunched</li>
+                    <li>Rapide - check gate is threaded down properly</li>
+                    <li>Pulley shackle - check pin is threaded and moused with a red cable tie properly</li>
+                    <li>Pulley sheaves - check the sheaves are moving freely</li>
+                    <li>Main line termination to the pulley becket - check figure 8 knot is tied correctly and is secure</li>
+                  </p>
+                 </ol>    
+               </li> 
+            </ol>
+         <li id="Cord_Use">Cord Use:
+          <ol>
+              <p>
+                <li>
+Single Use Cord - When selecting an appropriate cord for use with body suspension, a safety factor of 12:1 needs to be employed. This safety factor takes into account dynamic forces, peak load and terminations, however may not necessarily take into account shock loading - this can cause catastrophic failure and is to be avoided.
+               </li>
+              </p>
+              <p>
+                <li>
+Example 1: Cord with a minimum break strength of 350kg has a SWL of 29kgs per line
+Weight of person / # of hooks = SWL per line. There are TWO lines per hook (up and down)
+e.g 80kg / 4 hooks = 20kg per hook / 2 lines = 10kg per working line 
+  (this means a cord with a MINIMUM of 10 kg SWL per line is required)
+Therefore, the cord in this example IS suitable for use.
+
+               </li>
+              </p>
+              <p>
+                <li>
+Example 2: Cord with a minimum break strength of 200kg has a SWL of 16kgs per line
+
+Weight of person / # of hooks = SWL per line. There are TWO lines per hook (up and down)
+
+e.g 100kg / 2 hooks = 50kg per hook / 2 lines = 25kg per working line 
+(this means a cord with a MINIMUM of 25kg SWL per line is required)
+
+Therefore, the cord in this example is NOT suitable.
+
+               </li>
+              </p>
+              <p>
+                <li>
+Other factors that should be considered when selecting single use cord:
+<ol>
+
+<li>What the cord is made from</li>
+<li>How well it holds knots, bends and hitches</li>
+<li>How well the cord cuts / melts</li>
+<li>How much friction the cord creates through eyelets</li>
+<li>How durable the cord is</li>
+</ol>
+</ol>
+
+
+         <li id="Terminations">Terminations:
+          <ol>
+              <p>
+There are many knots/hitches/bends that can be utilised for body suspension, however, below are the most commonly used ones:
+              </p>
+              <p>
+                <li>Figure 8 follow through - this is the strongest termination we use. Ideal for use on heavier dynamic loads with less attachments. This knot is also used to terminate to the beket of the top block in the pulley system.
+               </li>
+              </p>
+              <p>
+                <li>Clove Hitch - Easily adjustable, perfect for use when a lot of points are being used and tension needs to be constantly adjusted. It is crucial however, that this knot be backed up with half hitches and a stopper knot as it can slip and cause failure.
+               </li>
+              </p>
+              <p>
+                <li>Double Fishermans - this can be used to attach two open lengths together and also as a stopper knot.
+               </li>
+              </p>
+              <p>
+                <li>Half Hitch - this is primarily used to lock hitches/bends in place prior to applying a stopper knot.
+               </li>
+              </p>
+              <p>
+                <li>Alpine Butterfly - used to create an anchor on an existing line, without decreasing the strength of the rope.
+               </li>
+              </p>
+              <p>
+                <li>Water Knot - used to join two ends together to create a continuous loop.
+               </li>
+              </p>
+              <p>
+                <li>Midshipman’s Hitch - useful hitch for adjusting lines under tension.
+               </li>
+              </p>
+              <p>
+                <li>Prusik / French Prusik / Autoblock - used as a locking mechanism on a mainline, useful in many scenarios.
+               </li>
+              </p>
+              <p>
+                <li>Round Turn and Two Half Hitches - used ONLY in static suspensions  
+               </li>
+              </p>
+              <p>
+                <li>Scaffold Knot - this is used primarily to terminate to the pulley beket (an alternative to the fig 8 follow through)
+               </li>
+              </p>
+              <p>
+              It is imperative a general rigger double checks ALL terminations prior to commencement of the suspension.
+            
+              </p>
+            </ol>
+<li id="Hardware_selection_&_use">Hardware selection & use:
+            <ol>
+              <p>
+                <li>When selecting hardware for suspension, it is important to take into special consideration it’s intended use and how it will work for your application. Certain hardware is designed for specific uses. Understand how they are designed and ensure their strength is suitable for your specific use. As a general rule of thumb - any single connector in the load path should have a MBS of 2000kg - 3000kg minimum (this means a SWL of 200kg/2kN minimum)
+               </li>
+              </p>
+              <p>
+                <li>Whatever hardware you choose, make sure it is fit for your purpose. If in doubt, consult with the manufacturer about your intended use.
+               </li>
+              </p>
+              <p>
+                <li>Round Slings / Spansets
+               </li>
+              </p>
+              <p>
+                <li>Round, synthetic generally - how it is used affects the strength so make sure you read the label.
+               </li>
+              </p>
+              <p>
+                <li>Connectors
+               </li>
+              </p>
+              <p>
+                <li>Popular connector options are aluminium carabiners, steel carabiners, maillon rapides and shackles. 
+               </li>
+              </p>
+              <p>
+                <li>Pulleys (Block and tackle style)
+               </li>
+              </p>
+              <p>
+                <li>Many pulley systems are available. Marine are quite popular due to their high strength to light weight ratio as well as their durability. Aluminium climbing pulleys are also lightweight, though they generally are designed a lot smaller.
+               </li>
+              </p>
+              <p>
+                <li>Mainline Rope
+               </li>
+              </p>
+              <p>
+                <li>Different applications may require different rope types. Commonly used are static or semi-static ropes made from nylon or polyester. Common sizes are 10mm / 11mm / 12mm.
+               </li>
+              </p>
+              <p>
+                <li>Swivels
+               </li>
+              </p>
+              <p>
+                <li>These need to be at least 23Kn - check also the intended use of the swivel before purchasing and ensure WLL is suitable.
+               </li>
+              </p>
+              <p>
+                <li>Rig Plates
+               </li>
+              </p>
+              <p>
+                <li>Aluminium climbing plates are most suitable as these are rated for human load, are lightweight and are well finished. Custom steel and aluminium rigs can also be made to a suitable strength for human load.
+               </li>
+              </p>
+              <p>
+                <li>
+               </li>
+              </p>
+              <p>
+                <li>Custom Fabrication
+               </li>
+              </p>
+              <p>
+                <li>This is something that needs very careful consideration. All custom fabrication needs to be engineered by a professional who understands the intended use of the custom piece, therefore made in such a way to withstand the forces imposed on it.
+               </li>
+              </p>
+              <p>
+                <li>Hooks
+               </li>
+              </p>
+              <p>
+                <li>Different hooks are available for different uses. The style of suspension will determine the desired hook type. Open gape hooks are primarily for static/semi-static suspensions; semi-locking hooks for multi directional static or dynamic loads; and locking hooks for dynamic loads.
+               </li>
+              </p>
+            </ol>
+            <li id="Belay">Belay:
+            <ol>
+              <p>
+                <li>The purpose of the belay (or in the case of body suspension, reverse-belay) is to be able to raise and lower the suspendee in a controlled manner. 
+               </li>
+              </p>
+              <p>
+                <li>Belayer should have an attachment point on their person, usually a well fitted harness, fit for belay purpose
+               </li>
+              </p>
+              <p>
+                <li>A belay device such as a petzl grigri or ATC should be used. Ensure belayer is trained in their use. Rope grabs can be used, however some types can damage the mainline.
+               </li>
+              </p>
+              <p>
+                <li>Rigger gloves should be worn to ensure hand safety
+               </li>
+              </p>
+              <p>
+                <li>Belayer to keep attention on suspendee throughout the whole time of suspension.
+               </li>
+              </p>
+              <p>
+                <li>* in some cases, it may be appropriate to tie suspendee off in a safe and secure fashion however this tie off is not to be left
+               </li>
+              </p>
+              <p>
+                <li>unattended.
+               </li>
+              </p>
+            </ol>
+            <li id="Mainline">Mainline:
+            <ol>
+              <p>
+                <li>Care should be taken with the mainline.
+               </li>
+              </p>
+              <p>
+                <li>Mainline should be thoroughly inspected prior to use.
+               </li>
+              </p>
+              <p>
+                <li>Unravel mainline in such a way that it is free from any kinks or unnecessary twists.
+               </li>
+              </p>
+              <p>
+                <li>Do NOT stand on the mainline at any time, this can damage the mainline and compromise its strength.
+               </li>
+              </p>
+            </ol>
+            <li id="Inspection_&_Maintenance">Inspection & Maintenance
+              <ol>
+              <p>
+                <li>All equipment must be visually inspected prior to each use. In addition to this all equipment must be periodically inspected by a competent person and documented where applicable.
+               </li>
+              </p>
+            </ol>
+                <li id="General_Rigging_Guidelines">General Rigging Guidelines:
+              <ol>
+               <p>
+                <li>All cord is single use and disposable.
+               </li>
+              </p>
+              <p>
+                <li>Inverted suspensions are to have a fall arrest (restraint belt / harness / swiss seat)
+               </li>
+              </p>
+              <p>
+                <li>All knots and connections are to be double checked by another rigger.  
+               </li>
+              </p>
+            </ol>
+
+<p id="PART_2_INFECTION_CONTROL">PART 2 - INFECTION CONTROL</p>
+          <li id="Roles_&_Responsibilities">Roles & Responsibilities:
+            <ol>
+              <p>
+                <li>Clean assist (Clean) - responsible for the handling of supplies with CLEAN hands only *except in the assistance of hook removal.
+               </li>
+              </p>
+              <p>
+                <li>Bio assist (Dirty) - responsible for the handling of all CONTAMINATED items and individuals. Certain PPE requirements are to be adhered to. 
+               </li>
+              </p>
+              <p>
+                <li>Piercer - responsible for the safe piercing of individuals to be suspended.
+               </li>
+              </p>
+              <p>
+                <li>Spotter - responsible for blood spotting on an individual while a suspension is taking place.
+               </li>
+              </p>
+            </ol>
+                <li id="Hand_Washing">Hand Washing:
+               <ol>
+              <p>
+                <li>Below is a diagram of appropriate hand washing procedure. This is to be done at the beginning of any preparation, piercing or handling of any individual to be suspended as well as after eating, smoking or using the bathroom.
+               </li>
+              </p>
+            </ol>
+                <li id="Personal_rProtective_Equipment">Personal Protective Equipment:
+               <ol>
+              <p>
+                <li>Eyewear, disinfectable after each use
+               </li>
+              </p>
+              <p>
+                <li>Facemask, single use, disposable
+               </li>
+              </p>
+              <p>
+                <li>Exam gloves, single use, disposable
+               </li>
+              </p>
+              <p>
+                <li>Plastic Aprons, single use, disposable
+               </li>
+              </p>
+              <p>
+                <li>Plastic sleeves, single use, disposable
+               </li>
+              </p>
+              </ol>
+                <li id="Set_Up">Set Up:
+              <ol>
+               
+              <p>
+                Don mask, wash hands then don gloves.
+               
+              </p>
+              <p>
+                <li>For piercing:
+               <br>Get hooks, needles, gauze, lubricant, sterile drape and a skin marker and place on the tray.
+               </li>
+              </p>
+              <p>
+                <li>For post suspension:
+              <br>Get gauze, patches, alcohol wipes, and lubricant (if needed)
+               </li>
+              </p>
+              <p>
+                <li>Clean Assistant:
+               <p><ol>
+
+                <li>Don mask and gloves.
+               </li>
+                <li>Bring any necessary supplies from the supply table.
+               </li>
+                <li>Assistant has no direct contact with the dirty massage table, suspendee or dirty worker.
+               </li>
+                <li>All disposable items brought to the work area and carefully placed onto the work surface.
+               </li>
+             </ol>
+              </p>
+            </li>
+              </ol>
+                <li id="Skin_Preparation">Skin Preparation:
+               
+              <ol>
+              <p>
+                <li>Don mask and gloves then massage the tissue to be pierced to break up the skin layers and soften the area.
+               </li>
+              </p>
+              <p>
+                <li>Change gloves and have a clean assistant hand you skin cleaner on sterile gauze.
+               </li>
+              </p>
+              <p>
+                <li>Apply between where the hook will enter and exit in circles, spiraling out beyond the hook placement in all directions – this is to first clean the surface of the skin.
+               </li>
+              </p>
+              <p>
+                <li>Change gloves and proceed with marking. Allow ink to dry.
+               </li>
+              </p>
+              <p>
+                <li>Change gloves and have a clean assistant add skin cleaner to gauze.
+               </li>
+              </p>
+              <p>
+                <li>Apply between where the hook will enter and exit and apply in circles, spiraling out beyond the hook placement in all directions – this is to disinfect the skin. Allow to dry completely (wipe off any excess if necessary).
+               </li>
+              </p>
+              </ol>
+                <li id="Piercing">Piercing:
+               
+              <ol>
+              <p>
+                <li>Piercer(s) – Don mask(s) and eyewear.
+               </li>
+              </p>
+              <p>
+                <li>Piercer to peel open sterile drape and use as a sterile field.
+               </li>
+              </p>
+              <p>
+                <li>Piercer to then open hooks pack(s) and needle pack(s) away from themselves and gently drop onto sterile drape.
+               </li>
+              </p>
+              <p>
+                <li>Piercer to open sterile lube and place on the drape.
+               </li>
+              </p>
+              <p>
+                <li>Piercer(s) to don new exam gloves then pick up hook and needle, lube the end of the needle without dragging the tip then insert hook end into back of needle.
+               </li>
+              </p>
+              <p>
+                <li>Pierce suspendee and dispose of needle immediately after in sharps container.
+               </li>
+              </p>
+              <p>
+                <li>Repeat for all piercings.
+               </li>
+              </p>
+              </ol>
+                <li id="Break_Down">Break Down:
+               <ol>
+              <p>
+                <li>If not already gloved, don gloves and ball up any paper waste on the tray and set this onto the drape sheet on the massage table and ball it all up.
+               </li>
+              </p>
+              <p>
+                <li>Keeping everything contained, carefully place into the contaminated waste bin.
+               </li>
+              </p>
+              <p>
+                <li>Change gloves and get a disinfectant wipe and wipe the surface starting at one end, in a side-to-side motion, from one end to the other, extending over both sides. This applies to the massage table and work tray. Allow to dry.
+               </li>
+              </p>
+              <p>
+                <li>Dispose of gloves and wipe, don new gloves then place a new drape on the massage table – put a green tag on both the table and tray.
+               </li>
+              </p>
+              </ol>
+                <li id="Bio_Assistant">Bio Assistant: 
+               <ol>
+              
+              <p>
+                <li>Don mask and gloves and have new gauze ready.
+               </li>
+              </p>
+              <p>
+                <li>Only wipe blood that is visibly running. If wiping is needed, ensure you wipe away from the wound so as to not drag debris into the wound.
+               </li>
+              </p>
+              <p>
+                <li>Pay attention to your suspendee at all times to avoid any unnecessary contamination.
+               </li>
+              </p>
+              </ol>
+                <li id="Rigging_with_Cord">Rigging with Cord:
+               <ol>
+              <p>
+                <li>However you decide to rig your cord, always avoid contaminating the rig where possible – the use of shackles can help with this. In this scenario, the spotter can attach the line with the shackles to the hooks and the rigger can remain without gloves, attaching the line to the rig.
+               </li>
+              </p>
+              <p>
+                <li>Have an assistant hold the rig steady when attaching lines if needed. If there is potential for the rig to become contaminated while rigging, have the assistant don gloves.
+               </li>
+              </p>
+              <p>
+                <li>Be careful when rigging not to run the line near the hook wounds, as this can contaminate the line with visible blood.
+               </li>
+              </p>
+              <p>
+                <li>Gloves must be worn when adjusting tension on the lines.
+               </li>
+              </p>
+              </ol>
+                <li id="Processing_Hardware">Processing Hardware:
+               <ol>
+              <p>
+                <li>Don gloves and get a disinfectant wipe.
+               </li>
+              </p>
+              <p>
+                <li>Remove shackles from hooks and thoroughly wipe then place in designated container.
+               </li>
+              </p>
+              <p>
+                <li>Change gloves and cut the contaminated rope as close to the rig as possible and dispose in the contaminated waste bin.
+               </li>
+              </p>
+              <p>
+                <li>Change gloves and get another disinfectant wipe.
+               </li>
+              </p>
+              <p>
+                <li>Start at one end of the rig and wipe all surfaces with the wipe while the rig is still hanging. Repeat if the rig is too large for one go or has visible contamination. (Alternatively, the rig can be disconnected and taken to the decontamination table for later disinfection)
+               </li>
+              </p>
+              <p>
+                <li>Allow to dry, disconnect and hang rig back on the rack.
+               </li>
+              </p>
+              <p>
+                <li>For hardware, don gloves and get a disinfectant wipe.
+               </li>
+              </p>
+              <p>
+                <li>Wipe all surfaces and place on the green side of the decontamination table.
+               </li>
+              </p>
+              <p>
+                <li>Once dry, return to the hardware table.
+               </li>
+              </p>
+              <p>
+                <li>Knives, unless visibly contaminated, may be used again without disinfection.
+               </li>
+              </p>
+              </ol>
+                <li id="Donning_PPE">Donning PPE:
+               <ol>
+              
+              <p>
+                <li>Put on mask, eyewear and apron.
+               </li>
+              </p>
+              <p>
+                <li>Don gloves and put on sleeves by poking a hole for thumb near the cuff then put on second pair of gloves over sleeves.
+               </li>
+              </p>
+              </ol>
+                <li id="Post_Suspension">Post Suspension:
+               <ol>
+              <p>
+                <li>Designate clean and bio assistants - have bio assistants don PPE (see above).
+               </li>
+              </p>
+              <p>
+                <li>If needed, bio assistant to lube the entry and exit wounds with a small amount of sterile lubricant.
+               </li>
+              </p>
+              <p>
+                <li>With gauze opened by clean assistant, bio assistant removes hooks, covering with gauze and immediately applies pressure to wound.
+               </li>
+              </p>
+              <p>
+                <li>In the case of hooks for personal use – have a snap lock bag with enzymatic foam and a plastic container ready, clean assistant to hold open snap lock bag.
+               </li>
+              </p>
+              <p>
+                <li>Clean assistant to have disinfectant wipes ready while the bio assistant hands them contaminated hooks and using the wipe, clean assistant removes any debris. Place in a designated contaminated hook container OR the snap lock bag.
+               </li>
+              </p>
+              <p>
+                <li>In the case of hooks for personal use – the clean assistant changes gloves then seals the snap lock bag. Place the sealed bag into another snap lock bag, then into the plastic container. Seal with tape and name. Hand to suspendee.
+               </li>
+              </p>
+              <p>
+                <li>Bio assistant massages out the air while keeping gauze over wounds and when it’s clear, bleeding is under control (i.e. not flowing), move onto the next hook.
+               </li>
+              </p>
+              <p>
+                <li>Repeat until all hooks are out and repeat for all wounds.
+               </li>
+              </p>
+              <p>
+                <li>In circular motions, starting at the inside, clean the area around the holes with soapy water soaked gauze to remove any dried blood. Alcohol wipes can be used to clean the area surrounding the hook holes if needed – this also helps patches adhere to the skin.
+               </li>
+              </p>
+              <p>
+                <li>Bio assistant then removes outer gloves.
+               </li>
+              </p>
+              <p>
+                <li>Clean assistant opens bandages and removes them from the package, ensuring the sterile pad is not touched at all and hands them to the bio assistant.
+               </li>
+              </p>
+              <p>
+                <li>Without touching the wounds with your gloves, cover the hole with the bandage and apply pressure – repeat for all wounds.
+               </li>
+              </p>
+              <p>
+                <li>Clean tray and table as defined in the break down section then remove PPE (apron > sleeves > gloves > mask > eyewear) and dispose of in contaminated waste bin.
+               </li>
+              </p>
+              <p>
+                IN CONDITIONS WHERE NUMEROUS WOUNDS NEED TO BE DRESSED, ADDITIONAL ASSISTANTS MAY BE REQUIRED. 
+               
+              </p>
+              <p>
+                IT MAY ALSO BE ACCEPTABLE FOR AN EXPERIENCED TEAM LEADER TO ADJUST THIS PROTOCOL ACCORDINGLY, WHERE BOTH ROLES MAY NOT BE NEEDED.
+               
+              </p>
+              </ol>
+                <li id="Hook_Processing">Hook Processing
+               <ol>
+              <p>
+                <li>Hooks wiped free of any blood and OPIM (other potential infectious matter).
+               </li>
+              </p>
+              <p>
+                <li>Hooks are to be covered in enzymatic solution after being wiped to prevent any matter drying to the hooks.
+               </li>
+              </p>
+              <p>
+                <li>Hooks are then rinsed and bagged.
+               </li>
+              </p>
+              <p>
+                <li>They are then taken to Sterile Services at the hospital to be processed and steam sterilised.
+               </li>
+              </p>
+              </ol>
+                <li id="Blood_Cleanup">Blood Cleanup:
+               <ol>
+              <p>
+                <li>Warn those in the area to avoid making contact, then don gloves.
+               </li>
+              </p>
+              <p>
+                <li>Get a disinfectant wipe, clean up excess blood spill then change gloves.
+               </li>
+              </p>
+              <p>
+                <li>Get another disinfectant wipe to clean the area down from side-to-side ensuring not to spread the contamination then allow to dry.
+               </li>
+              </p>
+              </ol>
+                <li id="Suturing_Protocol">Suturing Protocol:
+               <ol>
+              <p>
+                <li> Wash hands and don full PPE except gloves.
+               </li>
+              </p>
+              <p>
+                <li> Have a clean assistant set up tray with sterile gloves, and suture kit.
+               </li>
+              </p>
+              <p>
+                <li> Open sterile gloves and use as a sterile field. Unpack all other supplies and place onto sterile field.
+               </li>
+              </p>
+              <p>
+                <li> Don sterile gloves employing aseptic technique.
+               </li>
+              </p>
+              <p>
+                <li>Once suturing is done, clean surrounding area with an alcohol wipe then apply bandages with clean gloves.
+               </li>
+              </p>
+              <p>
+                <li>Follow break down procedure.
+               </li>
+              </p>
+              </ol>
+                <li id="Blood_OPIM_Exposure">Blood/OPIM Exposure:
+               <ol>
+              <p>
+If you injure yourself with a used needle or sharp, or were exposed in some other way to someone else's blood or body fluid, immediately follow these steps:
+              </p>
+              <p>
+            If needle stick or other sharps injury:
+            
+              </p>
+              <p>
+                <li> Inform team leader and remove yourself from area.
+               </li>
+              </p>
+              <p>
+                <li> At hand wash sink, encourage wound to bleed by holding it under running water.
+               </li>
+              </p>
+              <p>
+                <li> Wash the wound with soap and water.
+               </li>
+              </p>
+              <p>
+                <li> Do not scrub the wound while you are washing it.
+               </li>
+              </p>
+              <p>
+                <li> Dry the wound and cover it with a waterproof plaster.
+               </li>
+              </p>
+              <p>
+                <li> Disinfect the sink once able to – warn others area may be contaminated
+               </li>
+              </p>
+              <p>
+                <li> If splashes to the nose, mouth, eyes or skin:
+               </li>
+              </p>
+              <p>
+                <li> Flush these areas with running water.
+               </li>
+              </p>
+              <p>
+            Report the incident to the event coordinator. Fill in an exposure form and seek medical attention if needed. Included in this document package is a copy of an exposure form from Southern Community Laboratories.
+            
+              </p>
+            </ol>
+                <li id="Handling_of_Contaminated_Waste">Handling of contaminated waste:
+                  <ol>
+                <p>
+                <li> When changing contaminated waste, a mask, sleeves and gloves are to be worn.
+               </li>
+              </p>
+              <p>
+                <li> Once waste bags are full, they are sealed with a plastic cable tie and discarded in the yellow wheelie bins.
+               </li>
+              </p>
+              <p>
+                <li> Replace waste bin with a new bag.
+               </li>
+              </p>
+              </ol>
+                <li id="General_Guidelines_for_Infection_Control">General Infection Control guidelines:
+               <ol>
+              <p>
+                <li> All bottled supplies and packaged materials are to be handled with clean gloves. 
+               </li>
+              </p>
+              <p>
+                <li> Always return bottles to supply table immediately. Never set them down on your work area.  
+               </li>
+              </p>
+              <p>
+                <li> Work surface should be considered contaminated once the skin is broken.  
+               </li>
+              </p>
+              <p>
+                <li> ‘Green’ tag means decontaminated, no tag assume area is contaminated.   
+               </li>
+              </p>
+              <p>
+                <li> Never leave an area dirty. Always clean up before leaving a tray or massage table. Once cleaned and set up, place a green tag on the table and tray.  
+               </li>
+              </p>
+              <p>
+                <li> Once lines have been attached to shackles and hooks, they are dirty, so gloves must be worn.  
+               </li>
+              </p>
+              <p>
+                <li> Wash hands before and after every procedure. Hand washing protocol is attached to the wall in the practitioner hand wash area as well as in this protocol.  
+               </li>
+              </p>
+              <p>
+                <li> Use hand sanitizer as necessary, but it is not a substitute for hand washing.  
+               </li>
+              </p>
+              <p>
+                <li> Contaminated hooks and shackles are to be placed in the designated containers with shackle pins threaded on the outside (if applicable)
+               </li>
+              </p>
+              <p>
+                <li> There is a designated hand wash area for practitioners that are equipped with soap dispensers and disposable paper hand towels.  
+               </li>
+              </p>
+              <p>
+                <li>Contaminated hardware is to be taken to the hardware disinfection table.  
+               </li>
+              </p>
+              <p>
+                <li>No contaminated items are to be returned to the clean work surface.   
+               </li>
+              </p>
+              <p>
+                <li>Contaminated waste goes in the YELLOW biohazard bins. 
+               </li>
+              </p>
+              <p>
+
+
+
+</li>
+</ol>
+
+
+</section>
+
+</body>
