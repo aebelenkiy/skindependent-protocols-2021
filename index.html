@@ -10,6 +10,10 @@
   .informative{
     font-family: Oswald;
   }
+  .italic{
+    font-family: Oswald;
+  }
+
   ol {
     counter-reset: item;
     list-style-position: outside;
@@ -29,7 +33,7 @@
 
   li:not(.skip) {
       list-style-type: counters(item, ".") "";
-      text-indent: -30px;
+      text-indent: -35px;
       padding-bottom: 10px;
   }
 
@@ -41,11 +45,9 @@
 
 
  li.skip:before {
-    content:"\a0\a0\a0"; /* some white-space... optional */
+    /*content:"\a0\a0\a0";*/
 }
 
-
-  
 .logo {letter-spacing: -2px
 ; font-size: 30px}
 .logo_skin{font-style: italic;
@@ -58,9 +60,12 @@ h1{font-size: 30}
 h2{font-size: 25}
 
 h3{font-size: 20
-font-weight: bold;}
+font-weight: bold;
+display: inline;}
 
-h4{font-size: 15}
+h4{font-size: 15;
+font-weight: bold;
+display: inline;}
 
 </style>
 
@@ -123,56 +128,58 @@ h4{font-size: 15}
       <h2>PART 1: RIGGING</h2>
       <ol>
           <li id="Factors_of_Safety">
-            <strong>Factors of Safety</strong>
+            <h3>Factors of Safety</h3>
             <ol>
               <li>
-                The factor of safety is the ratio between the designated working load limit (WLL) or safe working load (SWL) and the load the equipment is expected to fail at. Given the nature of body suspension, it is considered a “high risk situation”. As we are flying people overhead, we (skindependent) employ a safety factor of 12:1. Below are examples and different terminologies.
+                The factor of safety is the ratio between the designated working load limit (WLL) or safe working load (SWL) and the load the equipment is expected to fail at. Given the nature of body suspension, it is considered a "high risk situation". As we are flying people overhead, we (skindependent) employ a safety factor of <strong>12:1</strong>. Below are examples and different terminologies.
               </li>
               <li>
-                <strong>Design Factor</strong>
+                <h4>Design Factor</h4><br>
                 The Design Factor (DF) is specified by a designer or manufacturer and this defines the factor applied to the MBS to determine maximum load acceptable for a component.
               </li>
               <li>
-                <strong>Safety Factor</strong>
+                <h4>Safety Factor</h4><br>
                 Safety Factor (SF) or Factor of Safety (FoS) is generally defined by industry rather than manufacturer.  It may be significantly different to DF.  For example, a particular connector may have a minimum break strength (MBS) of 50kN, a manufacturer specified DF of 4, but an industry specified SF of 10 when used for a particular application.
               </li>
               <li>
-                <strong>WLL</strong>
+                <h4>WLL</h4><br>
                 Working Load Limit (WLL) is a term used by manufacturers to indicate the maximum force that should be applied to an item in normal use, regardless of industry.  The ratio of MBS to WLL is referred to as the Design Factor (DF).  Many manufacturers specify a DF of 4, which implies a WLL of a quarter of the MBS.  Manufacturers state the WLL to ensure that the item is not subjected to significant fatigue and remains in the range of normal elastic deformation.
               </li>
               <li>
-                <strong>SWL</strong>
+                <h4>SWL</h4><br>
                 Safe Working Load (SWL) is typically determined by dividing the MBS of an item by the Safety Factor (SF) required for a particular use.  As stated above, it’s possible that an entertainment rigger may calculate a different SWL for a particular use of an item than the value determined by a rescue technician.
               </li>
               <li>
-                <strong>Example:</strong>
+                <h4>Example:</h4><br>
                 A particular steel carabiner has a MBS of 50kN.  The manufacturer has specified a DF of 4 for this connector, regardless of use. This carabiner has a WLL of 12.5kN and this value should never be exceeded in normal use – regardless of industry or application.  If this value is exceeded, it should not fail below the MBS however it should then be removed from service and destroyed. An entertainment rigger working in a certain country is required by the industry code-of-practice to use a SF of 10 for flying performers, and thus determines the SWL of this carabiner is 50kN/10 = 5kN. <br>
                 A rescue technician in another country is supposed to apply a SF of 5 to hardware, and thus determines a SWL of 50kn/5 = 10kN for an identical connector.
               </li>
             </ol>
           </li>
-         <li id="Rigger_Roles_&_Responsibilities">Rigger Roles & Responsibilities:
+         <li id="Rigger_Roles_&_Responsibilities">
+          <h3>Rigger Roles & Responsibilities:</h3>
           <ol>
            <li>
-            Head Rigger - This person is responsible for the overall rigging of the suspension event - all rigging to be checked off by a head rigger prior to any suspension commencing. Any and all matters pertaining to rigging can be brought to the head rigger.
+            <h4>Head Rigger</h4> - This person is responsible for the overall rigging of the suspension event - all rigging to be checked off by a head rigger prior to any suspension commencing. Any and all matters pertaining to rigging can be brought to the head rigger.
            </li>
            <li>
-            Top Rigger - This person is responsible for the rigging of the hard point of the suspension and attaching any and all equipment of the load path from the ceiling to the bottom block.
+            <h4>Top Rigger</h4> - This person is responsible for the rigging of the hard point of the suspension and attaching any and all equipment of the load path from the ceiling to the bottom block.
            </li>
            <li>
-            Ground Rigger - This person is responsible for spotting the top rigger on the ladder and must remain at the bottom of the ladder as a support until the top rigger has concluded their work and is safely back on the ground. They are also responsible for identifying any hazards that may be present under and around the area to be rigged.
+            <h4>Ground Rigger</h4> - This person is responsible for spotting the top rigger on the ladder and must remain at the bottom of the ladder as a support until the top rigger has concluded their work and is safely back on the ground. They are also responsible for identifying any hazards that may be present under and around the area to be rigged.
            </li>
            <li>
-            General Rigger - A crew member responsible for the general checking and oversight of any rigging in place, being vigilant to ensure the safety of everyone involved with the suspension(s) being facilitated.
+            <h4>General Rigger</h4> - A crew member responsible for the general checking and oversight of any rigging in place, being vigilant to ensure the safety of everyone involved with the suspension(s) being facilitated.
            </li>
-            It is the responsibility of all riggers to each have a safety knife and butane torch on their person in case of emergency. An LED torch should also be made available for any checking of overhead rigging and/or hook shifting.
+           <li class="skip">
+           	It is the responsibility of all riggers to each have a safety knife and butane torch on their person in case of emergency. An LED torch should also be made available for any checking of overhead rigging and/or hook shifting.
            </li>
           </ol>
          </li>
          <li id="Setting_up_the_load_path">Setting up the load path:
           <ol>
            <li>
-            Read through the WORKSAFE LADDER SAFETY document prior to setting the ladder up.
+            Read through the <a href="https://www.worksafe.govt.nz/topic-and-industry/working-at-height/safe-working-with-ladders-and-stepladders-construction/?fbclid=IwAR2wlS5ZM3XXC_AvdDPMiL4tLGPUy0J5fwAsXi33ssXABOTi8eOWQTXNcII#:~:text=Don't%20rest%20tools%20or,and%20one%20hand%20when%20working">WORKSAFE LADDER SAFETY</a> document prior to setting the ladder up.
            </li>
            <li> 
             Once the ladder is carefully placed against the ceiling beam, top rigger to climb with ground rigger supporting the bottom rung.
@@ -201,7 +208,9 @@ h4{font-size: 15}
            <li>
             It is the responsibility of the head rigger to attach a GREEN tag to the hard point where the load path begins, once all connections have been checked. This includes but is not limited to:
             <ol>            
-             <li>Protective mat covering the beam - make sure is not moving around and is covering all edges</li>
+             <li>
+              Protective mat covering the beam - make sure is not moving around and is covering all edges
+             </li>
              <li>Sling/Spanset - check it is evenly wrapped and not bunched</li>
              <li>Rapide - check gate is threaded down properly</li>
              <li>Pulley shackle - check pin is threaded and moused with a red cable tie properly</li>
