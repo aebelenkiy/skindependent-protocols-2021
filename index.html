@@ -1,88 +1,21 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-
-<style type="text/css">
-
-  body{font-family: Oswald;}
-
-/*  .important{
-    font-weight:bold;
-  }*/
-  .informative{
-    font-family: Oswald;
-  }
-  .italic{
-    font-style: : italic;
-  }
-
-  ol {
-    counter-reset: item;
-    list-style-position: outside;
-    list-style-type: none;
-  }
-/*  li {
-      list-style-type: counters(item, ".") "";
-      text-indent: -30px;
-      padding-bottom: 10px;
-  }
-
-  li:before {
-    content: counters(item, ".") ".  ";
-    counter-increment: item;
-    white-space: pre;
-    }*/
-
-  li:not(.skip) {
-      list-style-type: counters(item, ".") "";
-      text-indent: -35px;
-      padding-bottom: 10px;
-  }
-
-  li:not(.skip):before {
-    content: counters(item, ".") ".  ";
-    counter-increment: item;
-    white-space: pre;
-    }  
-
-
- li.skip:before {
-    /*content:"\a0\a0\a0";*/
-}
-
-.green {color: green;}
-
-.logo {letter-spacing: -2px
-; font-size: 30px}
-.logo_skin{font-style: italic;
-  color: #d1d1d1;
-font-weight: 100}
-.logo_sus{font-weight: 900;}
-
-h1{font-size: 30}
-
-h2{font-size: 25}
-
-h3{font-size: 20
-font-weight: bold;
-display: inline;}
-
-h4{font-size: 15;
-font-weight: bold;
-display: inline;}
-
-</style>
+<link rel="stylesheet" type="text/css" href="main.css">
 
   <body>
-    <nav>
+
+      <nav id="navbar">
       <header>        
         <div class="logo">
-          <span class="logo_skin">SKINDEPENDENT</span><span class="logo_sus">SUSPENSION</span>
+          <h1><span class="logo_skin">SKINDEPENDENT</span><span class="logo_sus">SUSPENSION</span></h1>
         </div>
-        2021 PROCEDURE PROTOCOL V 1.2
+        <h2>2021 PROCEDURE PROTOCOL V 1.2</h2>
       </header>
+
+
       <ol>
-        <li>
-          <a class="nav-link" href="#PART_1_RIGGING">PART 1: RIGGING</a>
-            <ol>
+        <li class="skip">
+          <a class="nav-link" href="#PART_1_RIGGING">PART 1: RIGGING</a></li>
+            <!-- <ol> -->
               <li><a class="nav-link" href="#Factors_of_Safety">Factors of Safety</a></li>
               <li><a class="nav-link" href="#Rigger_Roles_&_Responsibilities">Rigger Roles & Responsibilities</a></li>
               <li><a class="nav-link" href="#Setting_up_the_load_path">Setting up the load path</a></li>
@@ -93,11 +26,11 @@ display: inline;}
               <li><a class="nav-link" href="#Mainline">Mainline</a></li>
               <li><a class="nav-link" href="#Inspection_&_Maintenance">Inspection & Maintenance</a></li>
               <li><a class="nav-link" href="#General_Rigging_Guidelines">General Rigging Guidelines</a></li>
-            </ol>
-        </li>
-        <li>
-          <a class="nav-link" href="#PART_2_INFECTION_CONTROL">PART 2: INFECTION CONTROL</a>
-          <ol>
+            <!-- </ol> -->
+        <!-- </li> -->
+        <li class="skip">
+          <a class="nav-link" href="#PART_2_INFECTION_CONTROL">PART 2: INFECTION CONTROL</a></li>
+          <!-- <ol> -->
             <li><a class="nav-link" href="#Roles_&_Responsibilities">Roles & Responsibilities</a></li>
             <li><a class="nav-link" href="#Hand_Washing">Hand Washing</a></li>
             <li><a class="nav-link" href="#Personal_Protective_Equipment">Personal Protective Equipment</a></li>
@@ -116,26 +49,28 @@ display: inline;}
             <li><a class="nav-link" href="#Blood_OPIM_Exposure">Blood/OPIM Exposure</a></li>
             <li><a class="nav-link" href="#Handling_of_Contaminated_Waste">Handling of Contaminated Waste</a></li>
             <li><a class="nav-link" href="#General_Guidelines_for_Infection_Control">General Guidelines for Infection Control</a></li>
-          </ol>
-        </li>  
-        <li>
-          <a class="nav-link" href="#PART_3_ADDITIONAL_INFORMATION">PART 3: ADDITIONAL INFORMATION</a>
-          <ol>
+          <!-- </ol> -->
+        <!-- </li>   -->
+        <li class="skip">
+          <a class="nav-link" href="#PART_3_ADDITIONAL_INFORMATION">PART 3: ADDITIONAL INFORMATION</a></li>
+          <!-- <ol> -->
             <li><a class="nav-link" href="#Links_&_Information">Links & Information</a></li>
-          </ol>
-        </li>
+          <!-- </ol> -->
+        <!-- </li> -->
       </ol>
     </nav>
-      <h2 id="PART_1_RIGGING">PART 1: RIGGING</h2>
+    <main id="main-doc"> 
+    
+    <section>
+
+      
       <ol>
-          <li id="Factors_of_Safety">
+      	  <li class="skip"><h2 id="PART_1_RIGGING">PART 1: RIGGING</h2></li>
+          <li id="Factors_of_Safety" class="list-header">
             <h3>Factors of Safety</h3>
             <ol>
-              <li>
-                The factor of safety is the ratio between the designated working load limit (WLL) or safe working load (SWL) and the load the equipment is expected to fail at. Given the nature of body suspension, it is considered a "high risk situation". As we are flying people overhead, we (skindependent) employ a safety factor of <strong>12:1</strong>. Below are examples and different terminologies.
-              </li>
-              <li>
-                <h4>Design Factor</h4><br>
+              <li>The factor of safety is the ratio between the designated working load limit (WLL) or safe working load (SWL) and the load the equipment is expected to fail at. Given the nature of body suspension, it is considered a "high risk situation". As we are flying people overhead, we (skindependent) employ a safety factor of <strong>12:1</strong>. Below are examples and different terminologies.</li>
+              <li><h4>Design Factor</h4><br>
                 The Design Factor (DF) is specified by a designer or manufacturer and this defines the factor applied to the MBS to determine maximum load acceptable for a component.
               </li>
               <li>
@@ -180,39 +115,27 @@ display: inline;}
          <li id="Setting_up_the_load_path">
           <h3>Setting up the load path:</h3>
           <ol>
-           <li>
-            Read through the <a href="https://www.worksafe.govt.nz/topic-and-industry/working-at-height/safe-working-with-ladders-and-stepladders-construction/?fbclid=IwAR2wlS5ZM3XXC_AvdDPMiL4tLGPUy0J5fwAsXi33ssXABOTi8eOWQTXNcII#:~:text=Don't%20rest%20tools%20or,and%20one%20hand%20when%20working">WORKSAFE LADDER SAFETY</a> document prior to setting the ladder up.
+           <li>Read through the <a href="https://www.worksafe.govt.nz/topic-and-industry/working-at-height/safe-working-with-ladders-and-stepladders-construction/?fbclid=IwAR2wlS5ZM3XXC_AvdDPMiL4tLGPUy0J5fwAsXi33ssXABOTi8eOWQTXNcII#:~:text=Don't%20rest%20tools%20or,and%20one%20hand%20when%20working">WORKSAFE LADDER SAFETY</a> document prior to setting the ladder up.
            </li>
-           <li> 
-            Once the ladder is carefully placed against the ceiling beam, top rigger to climb with ground rigger supporting the bottom rung.
+           <li>Once the ladder is carefully placed against the ceiling beam, top rigger to climb with ground rigger supporting the bottom rung.
            </li>
-           <li>
-            Top rigger to have protective mat for beam and black sling.
+           <li>Top rigger to have protective mat for beam and black sling.
            </li>
-           <li>
-            Once at the ceiling hardpoint, check the beam for any abnormalities - specifically sharp burrs or anything that could compromise the hardware.
+           <li>Once at the ceiling hardpoint, check the beam for any abnormalities - specifically sharp burrs or anything that could compromise the hardware.
            </li>
-           <li>
-            Lay the mat over the beam, covering the edges and tape in place if needed.
+           <li>Lay the mat over the beam, covering the edges and tape in place if needed.
            </li>
-           <li>
-            Choke the round sling on top of the mat and ensure it is secure.
+           <li>Choke the round sling on top of the mat and ensure it is secure.
            </li>
-           <li>
-            Return to the floor to collect remaining hardware (delta rapide and reeved pulley system).
+           <li>Return to the floor to collect remaining hardware (delta rapide and reeved pulley system).
            </li>
-           <li>
-            Attach the delta to the sling then attach the pulley system to the delta. Ensure there is no tension on the delta when threading the gate closed (remember to thread down).
+           <li>Attach the delta to the sling then attach the pulley system to the delta. Ensure there is no tension on the delta when threading the gate closed (remember to thread down).
            </li>
-           <li>
-            Once all is attached, have the head rigger double check all the attachment points in the load path.
+           <li>Once all is attached, have the head rigger double check all the attachment points in the load path.
            </li>
-           <li>
-            It is the responsibility of the head rigger to attach a <span class="green">GREEN</span> tag to the hard point where the load path begins, once all connections have been checked. This includes but is not limited to:
+           <li>It is the responsibility of the head rigger to attach a <span class="green">GREEN</span> tag to the hard point where the load path begins, once all connections have been checked. This includes but is not limited to:
             <ol>            
-             <li>
-              Protective mat covering the beam - make sure is not moving around and is covering all edges
-             </li>
+             <li>Protective mat covering the beam - make sure is not moving around and is covering all edges</li>
              <li>Sling/Spanset - check it is evenly wrapped and not bunched</li>
              <li>Rapide - check gate is threaded down properly</li>
              <li>Pulley shackle - check pin is threaded and moused with a red cable tie properly</li>
@@ -385,9 +308,7 @@ display: inline;}
            <li>All knots and connections are to be double checked by another rigger. </li>
           </ol>
          </li>
-
-<h2 id="PART_2_INFECTION_CONTROL">PART 2 - INFECTION CONTROL</h2>
-
+         <li class="skip"><h2 id="PART_2_INFECTION_CONTROL">PART 2 - INFECTION CONTROL</h2></li>
          <li id="Roles_&_Responsibilities">
           <h3>Roles & Responsibilities:</h3>
           <ol>
@@ -557,10 +478,10 @@ display: inline;}
          <li id="Suturing_Protocol">
           <h3>Suturing Protocol:</h3>
           <ol>
-           <li> Wash hands and don full PPE except gloves.</li>
-           <li> Have a clean assistant set up tray with sterile gloves, and suture kit.</li>
-           <li> Open sterile gloves and use as a sterile field. Unpack all other supplies and place onto sterile field.</li>
-           <li> Don sterile gloves employing aseptic technique.</li>
+           <li>Wash hands and don full PPE except gloves.</li>
+           <li>Have a clean assistant set up tray with sterile gloves, and suture kit.</li>
+           <li>Open sterile gloves and use as a sterile field. Unpack all other supplies and place onto sterile field.</li>
+           <li>Don sterile gloves employing aseptic technique.</li>
            <li>Once suturing is done, clean surrounding area with an alcohol wipe then apply bandages with clean gloves.</li>
            <li>Follow break down procedure.</li>
           </ol>
@@ -607,6 +528,7 @@ display: inline;}
            <li>Contaminated waste goes in the YELLOW biohazard bins. </li>
           </ol>
          </li>
+         <li class="skip"><h2 id="PART_3_ADDITIONAL_INFORMATION">PART 3: ADDITIONAL INFORMATION</h2></li>
          <li id="Links_&_Information">
           <h3>Links and Information:</h3>
           <ol>
@@ -621,4 +543,6 @@ display: inline;}
           </ol>
          </li>
         </ol>
+    </section>
+    </main>
 </body>
